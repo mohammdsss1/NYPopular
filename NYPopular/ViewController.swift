@@ -1,20 +1,19 @@
-//
-//  ViewController.swift
-//  NYPopular
-//
-//  Created by Hammoda on 5/22/20.
-//  Copyright © 2020 salah. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    lazy var apiHandler = APIHandeler()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        apiHandler.request(endPoint: EndPoint.mostPopular(period: "1")) { (result: Result<[Article], NetworkLayer.ErrorModel>) in
+            switch result {
+            case .success(let articles):
+                print(articles)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
-
-
 }
 
