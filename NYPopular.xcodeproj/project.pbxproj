@@ -22,6 +22,7 @@
 		D73F8D5D247732EA00BC4165 /* Sniffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F8D5C247732EA00BC4165 /* Sniffer.swift */; };
 		D73F8D5F247736BD00BC4165 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F8D5E247736BD00BC4165 /* Article.swift */; };
 		D73F8D6124773A1B00BC4165 /* ArticlesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F8D6024773A1B00BC4165 /* ArticlesService.swift */; };
+		D73F8D6324773D4D00BC4165 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F8D6224773D4D00BC4165 /* ArticlesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D73F8D5C247732EA00BC4165 /* Sniffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sniffer.swift; sourceTree = "<group>"; };
 		D73F8D5E247736BD00BC4165 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		D73F8D6024773A1B00BC4165 /* ArticlesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesService.swift; sourceTree = "<group>"; };
+		D73F8D6224773D4D00BC4165 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				D73F8D2324772F8100BC4165 /* AppDelegate.swift */,
 				D73F8D2524772F8100BC4165 /* SceneDelegate.swift */,
 				D73F8D2724772F8100BC4165 /* ViewController.swift */,
+				D73F8D6224773D4D00BC4165 /* ArticlesViewModel.swift */,
 				D73F8D2924772F8100BC4165 /* Main.storyboard */,
 				D73F8D2C24772F8500BC4165 /* Assets.xcassets */,
 				D73F8D2E24772F8500BC4165 /* LaunchScreen.storyboard */,
@@ -290,6 +293,7 @@
 			files = (
 				D73F8D582477305D00BC4165 /* NetworkLayer.swift in Sources */,
 				D73F8D592477305D00BC4165 /* APIRouter.swift in Sources */,
+				D73F8D6324773D4D00BC4165 /* ArticlesViewModel.swift in Sources */,
 				D73F8D5F247736BD00BC4165 /* Article.swift in Sources */,
 				D73F8D2824772F8100BC4165 /* ViewController.swift in Sources */,
 				D73F8D2424772F8100BC4165 /* AppDelegate.swift in Sources */,
