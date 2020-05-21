@@ -1,12 +1,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-    lazy var apiHandler = APIHandeler()
+    lazy var articlesManager: ArticlesService = ArticlesManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        apiHandler.request(endPoint: EndPoint.mostPopular(period: "1")) { (result: Result<[Article], NetworkLayer.ErrorModel>) in
+        articlesManager.getMostPopularArticles(withPeriod: "1") { result in
             switch result {
             case .success(let articles):
                 print(articles)

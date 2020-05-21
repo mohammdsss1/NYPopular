@@ -21,6 +21,7 @@
 		D73F8D5B2477305D00BC4165 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F8D572477305D00BC4165 /* EndPoint.swift */; };
 		D73F8D5D247732EA00BC4165 /* Sniffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F8D5C247732EA00BC4165 /* Sniffer.swift */; };
 		D73F8D5F247736BD00BC4165 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F8D5E247736BD00BC4165 /* Article.swift */; };
+		D73F8D6124773A1B00BC4165 /* ArticlesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F8D6024773A1B00BC4165 /* ArticlesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		D73F8D572477305D00BC4165 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		D73F8D5C247732EA00BC4165 /* Sniffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sniffer.swift; sourceTree = "<group>"; };
 		D73F8D5E247736BD00BC4165 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D73F8D6024773A1B00BC4165 /* ArticlesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				D73F8D2E24772F8500BC4165 /* LaunchScreen.storyboard */,
 				D73F8D3124772F8500BC4165 /* Info.plist */,
 				D73F8D5E247736BD00BC4165 /* Article.swift */,
+				D73F8D6024773A1B00BC4165 /* ArticlesService.swift */,
 				D73F8D532477305D00BC4165 /* Networking */,
 			);
 			path = NYPopular;
@@ -291,6 +294,7 @@
 				D73F8D2824772F8100BC4165 /* ViewController.swift in Sources */,
 				D73F8D2424772F8100BC4165 /* AppDelegate.swift in Sources */,
 				D73F8D2624772F8100BC4165 /* SceneDelegate.swift in Sources */,
+				D73F8D6124773A1B00BC4165 /* ArticlesService.swift in Sources */,
 				D73F8D5D247732EA00BC4165 /* Sniffer.swift in Sources */,
 				D73F8D5B2477305D00BC4165 /* EndPoint.swift in Sources */,
 				D73F8D5A2477305D00BC4165 /* APIHandeler.swift in Sources */,
