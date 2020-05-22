@@ -7,7 +7,6 @@
 * a framework target called **Networking** to handle backend communications. It has a unit test file to test its major function.
 
 To build the App just run the following command: 
-
 `fastlane gym --export_method development`
 
 To run the tests, just do:
