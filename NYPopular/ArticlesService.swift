@@ -1,7 +1,9 @@
 import Foundation
 
+typealias ResultType = Result<[Article], NetworkLayer.ErrorModel>
+
 protocol ArticlesService {
-    func getMostPopularArticles(withPeriod period: String, then: @escaping (_ result: Result<[Article], NetworkLayer.ErrorModel>) -> ())
+    func getMostPopularArticles(withPeriod period: String, then: @escaping (_ result: ResultType) -> ())
 }
 
 final class ArticlesManager{
@@ -9,8 +11,8 @@ final class ArticlesManager{
 }
 
 extension ArticlesManager: ArticlesService{
-    func getMostPopularArticles(withPeriod period: String, then: @escaping (Result<[Article], NetworkLayer.ErrorModel>) -> ()) {
-        apiHandler.request(endPoint: EndPoint.mostPopular(period: period)) { (result: Result<[Article], NetworkLayer.ErrorModel>) in
+    func getMostPopularArticles(withPeriod period: String, then: @escaping (ResultType) -> ()) {
+        apiHandler.request(endPoint: EndPoint.mostPopular(period: period)) { (result: ResultType) in
             then(result)
         }
     }
