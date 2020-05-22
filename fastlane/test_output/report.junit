@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='NetworkingTests.xctest' tests='2' failures='0'>
+  <testsuite name='NYPopularTests.NYPopularTests' tests='1' failures='0'>
+    <testcase classname='NYPopularTests.NYPopularTests' name='testArticlesViewModel' time='2.248'/>
+  </testsuite>
+  <testsuite name='NetworkingTests.NetworkingTests' tests='1' failures='0'>
+    <testcase classname='NetworkingTests.NetworkingTests' name='testArticlesRequest' time='3.872'/>
+  </testsuite>
+</testsuites>

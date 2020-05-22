@@ -30,7 +30,7 @@ class NYPopularTests: XCTestCase {
             expectation.fulfill()
         })
         
-        waitForExpectations(timeout: 5.0) { error in
+        waitForExpectations(timeout: 10.0) { error in
             if let error = error {
                 print("\(error)")
             }
