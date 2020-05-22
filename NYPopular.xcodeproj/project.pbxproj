@@ -189,17 +189,14 @@
 			children = (
 				D73F8D2324772F8100BC4165 /* AppDelegate.swift */,
 				D73F8D2524772F8100BC4165 /* SceneDelegate.swift */,
-				D73F8D2724772F8100BC4165 /* ViewController.swift */,
-				D73F8D6824774E7300BC4165 /* DetailesVC.swift */,
-				D73F8D66247742EF00BC4165 /* ArticlesSource.swift */,
-				D73F8D6224773D4D00BC4165 /* ArticlesViewModel.swift */,
-				D73F8D642477420A00BC4165 /* ArticleCell.swift */,
+				D73F8D9D2478705400BC4165 /* Services */,
+				D73F8D9C2478703D00BC4165 /* View Models */,
+				D73F8D9B2478702B00BC4165 /* Data Entities */,
+				D73F8D9824786FAD00BC4165 /* MVC */,
 				D73F8D2924772F8100BC4165 /* Main.storyboard */,
 				D73F8D2C24772F8500BC4165 /* Assets.xcassets */,
 				D73F8D2E24772F8500BC4165 /* LaunchScreen.storyboard */,
 				D73F8D3124772F8500BC4165 /* Info.plist */,
-				D73F8D5E247736BD00BC4165 /* Article.swift */,
-				D73F8D6024773A1B00BC4165 /* ArticlesService.swift */,
 			);
 			path = NYPopular;
 			sourceTree = "<group>";
@@ -251,6 +248,57 @@
 				D73F8D9124785E8C00BC4165 /* Sniffer.swift */,
 			);
 			path = source;
+			sourceTree = "<group>";
+		};
+		D73F8D9824786FAD00BC4165 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				D73F8D9A24786FFC00BC4165 /* View */,
+				D73F8D9924786FF000BC4165 /* Controllers */,
+				D73F8D66247742EF00BC4165 /* ArticlesSource.swift */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		D73F8D9924786FF000BC4165 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D73F8D2724772F8100BC4165 /* ViewController.swift */,
+				D73F8D6824774E7300BC4165 /* DetailesVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D73F8D9A24786FFC00BC4165 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D73F8D642477420A00BC4165 /* ArticleCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D73F8D9B2478702B00BC4165 /* Data Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D73F8D5E247736BD00BC4165 /* Article.swift */,
+			);
+			path = "Data Entities";
+			sourceTree = "<group>";
+		};
+		D73F8D9C2478703D00BC4165 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				D73F8D6224773D4D00BC4165 /* ArticlesViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D73F8D9D2478705400BC4165 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D73F8D6024773A1B00BC4165 /* ArticlesService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
