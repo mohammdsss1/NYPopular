@@ -13,6 +13,7 @@ final class ArticlesSource: NSObject {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension ArticlesSource: UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int { 1 }
     
@@ -27,6 +28,7 @@ extension ArticlesSource: UITableViewDataSource{
     }
 }
 
+// MARK: - UITableViewDelegate
 extension ArticlesSource: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelectArticle(atRow: indexPath.row)
