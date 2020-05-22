@@ -12,3 +12,4 @@ To build the App just run the following command:
 To run the tests, just do:
 `fastlane tests`
 
+**Note:** If I missed something then it is because I am overwhelmed with my current job. 
