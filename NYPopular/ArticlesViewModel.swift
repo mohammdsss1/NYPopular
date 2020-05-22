@@ -1,4 +1,5 @@
 import Foundation
+import Networking
 
 class ArticlesViewModel {
     private let articlesManager: ArticlesService
@@ -11,7 +12,7 @@ class ArticlesViewModel {
     func getMostPopularArticles(withPeriod period: Article.Period, success: @escaping (([Article]) -> ()), failure: @escaping (NetworkLayer.ErrorModel) -> ()) {
         articlesManager.getMostPopularArticles(withPeriod: period) { [weak self] result in
             guard let self = self else {
-                failure(NetworkLayer.ErrorModel.init(type: .defaultError))
+                failure(NetworkLayer.ErrorModel(type: .defaultError))
                 return
             }
             

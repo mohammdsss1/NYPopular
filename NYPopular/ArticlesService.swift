@@ -1,4 +1,5 @@
 import Foundation
+import Networking
 
 typealias ResultType = Result<[Article], NetworkLayer.ErrorModel>
 
