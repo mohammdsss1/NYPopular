@@ -8,27 +8,47 @@
 
 import XCTest
 @testable import Networking
+//@testable import NYPopular
+
+struct SimpleArticle: Codable{
+    var id = 0
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(Int.self, forKey: .id)
+    }
+}
 
 class NetworkingTests: XCTestCase {
-
+    var apiHandler: APIHandeler!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        apiHandler = APIHandeler()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        apiHandler = nil
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testArticlesRequest() {
+        let expectation = self.expectation(description: "articles")
+        apiHandler.request(endPoint: EndPoint.mostPopular(period: "1")) { (result: Result<[SimpleArticle], NetworkLayer.ErrorModel>) in
+            switch result {
+            case .success(let articles):
+                XCTAssertFalse(articles.isEmpty)
+            case .failure(_):
+                assertionFailure()
+            }
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 5.0) { error in
+            if let error = error {
+                print("\(error)")
+            }
         }
     }
-
 }
