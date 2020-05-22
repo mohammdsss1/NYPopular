@@ -4,7 +4,7 @@ protocol ArticlesSourceDelegate: class{
     func didSelectArticle(atRow: Int)
 }
 
-class ArticlesSource: NSObject {
+final class ArticlesSource: NSObject {
     weak var articlesViewModel: ArticlesViewModel?
     weak var delegate: ArticlesSourceDelegate?
     
