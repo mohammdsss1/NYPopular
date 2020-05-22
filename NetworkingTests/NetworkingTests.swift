@@ -8,9 +8,8 @@
 
 import XCTest
 @testable import Networking
-//@testable import NYPopular
 
-struct SimpleArticle: Codable{
+fileprivate struct SimpleArticle: Codable{
     var id = 0
     
     enum CodingKeys: String, CodingKey {
