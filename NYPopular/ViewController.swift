@@ -25,7 +25,7 @@ final class ViewController: UIViewController {
         tableView.delegate = source
         tableView.dataSource = source
         
-        articlesViewModel.getMostPopularArticles(withPeriod: "1", success: { [weak self] articles in
+        articlesViewModel.getMostPopularArticles(withPeriod: .one, success: { [weak self] articles in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }

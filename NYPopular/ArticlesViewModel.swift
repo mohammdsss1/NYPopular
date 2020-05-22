@@ -8,7 +8,7 @@ class ArticlesViewModel {
         articlesManager = ArticlesManager()
     }
     
-    func getMostPopularArticles(withPeriod period: String, success: @escaping (([Article]) -> ()), failure: @escaping (NetworkLayer.ErrorModel) -> ()) {
+    func getMostPopularArticles(withPeriod period: Article.Period, success: @escaping (([Article]) -> ()), failure: @escaping (NetworkLayer.ErrorModel) -> ()) {
         articlesManager.getMostPopularArticles(withPeriod: period) { [weak self] result in
             guard let self = self else {
                 failure(NetworkLayer.ErrorModel.init(type: .defaultError))

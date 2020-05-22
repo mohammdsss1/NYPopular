@@ -1,6 +1,12 @@
 import Foundation
 
 struct Article: Codable{
+    enum Period: String{
+        case one = "1"
+        case seven = "7"
+        case thirty = "30"
+    }
+    
     var id = 0
     var source = ""
     var title = ""
